@@ -213,13 +213,13 @@ return new class extends Migration
                 'team2_name' => 'BTS',
             ],
             [
-                'tournament_id' => '2',
+                'tournament_id' => '3',
                 'match_number' => '5',
                 'team1_name' => 'Sila4i',
                 'team2_name' => 'TM',
             ],
             [
-                'tournament_id' => '2',
+                'tournament_id' => '3',
                 'match_number' => '6',
                 'team1_name' => 'Brokies',
                 'team2_name' => 'BTS',

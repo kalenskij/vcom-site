@@ -5,14 +5,14 @@
   <meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <link rel="stylesheet" href="{{asset('css/common.css')}}">
   <link rel="stylesheet" href="{{asset('css/tournament.css')}}">
-  <title>VCOM :: FIRST</title>
-  <link rel="icon" type="image/png" href="images/logo_head.png"/>
+  <title>{{$tournament->tournament_name}}</title>
+  <link rel="icon" type="image/png" href="{{asset('images/logo_head.png')}}"/>
 </head>
 
 <body>
   <div id="container">
     <nav>
-      <a href="index" id="logo"><img src="{{asset('images/Лого.svg')}}"></a>
+      <a href="/index" id="logo"><img src="{{asset('images/Лого.svg')}}"></a>
 
       <label for="drop" class="toggle">
         <div id="hamburger">
@@ -23,9 +23,9 @@
       </label>
       <input type="checkbox" id="drop" />
       <ul class="menu">
-        <li><a href="tournaments_container">Турніри</a></li>
+        <li><a href="/tournaments_container">Турніри</a></li>
         <li><a href="https://discord.com/invite/vcom" target="_blank">24/7&nbsp;Підтримка</a></li>
-        <a href="index"><img src="{{asset('images/Текст лого.svg')}}"></a>
+        <a href="/index"><img src="{{asset('images/Текст лого.svg')}}"></a>
       </ul>
     </nav>
     <div id="info">

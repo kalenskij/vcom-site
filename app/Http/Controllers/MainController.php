@@ -28,17 +28,11 @@ class MainController extends Controller
     public static function tournaments(Request $request)
     {
         session_start();
-        $page = $request->page;
         $tournaments = Tournament::all();
-
-        if (!$page)
-        {
-            $page = 1;
-        }
 
         if($tournaments)
         {
-            return view('tournaments_container', ['tournaments' => $tournaments, 'page' => $page]);
+            return view('tournaments_container', ['tournaments' => $tournaments]);
         }
         else{
             return 'Error!';
@@ -48,15 +42,6 @@ class MainController extends Controller
     public static function index()
     {
         session_start();
-
-        $tournaments = Tournament::all();
-
-        if($tournaments)
-        {
-            return view('index', ['tournaments' => $tournaments]);
-        }
-        else{
-            return 'Error!';
-        }
+        return view('index');
     }
 }
